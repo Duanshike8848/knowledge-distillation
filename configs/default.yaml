@@ -1,0 +1,51 @@
+# Default experiment settings.
+#
+# Portability notes:
+# - macOS can run this with CPU or Apple MPS. Keep batch sizes small.
+# - Windows + RTX 3070 should use device: auto, fp16: true, and larger batch sizes.
+# - All paths are relative to the project root, so the project can be copied between
+#   macOS and Windows without rewriting file paths.
+
+dataset:
+  name: ag_news
+  text_column: text
+  label_column: label
+  max_length: 128
+  validation_split_ratio: 0.1
+  # Use these limits for quick Mac smoke tests. Set to null for full training.
+  max_train_samples: 2000
+  max_eval_samples: 500
+
+models:
+  teacher_name: distilbert-base-uncased
+  student_name: google/bert_uncased_L-2_H-128_A-2
+
+training:
+  seed: 42
+  batch_size: 8
+  eval_batch_size: 16
+  learning_rate: 0.00005
+  epochs: 1
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  fp16: false
+  num_workers: 0
+  output_dir: outputs
+
+distillation:
+  alpha_start: 0.8
+  alpha_end: 0.3
+  temperature_start: 6.0
+  temperature_end: 2.0
+  feature_loss_weight: 0.1
+
+paths:
+  teacher_dir: models/teacher
+  student_dir: models/student_distilled
+  onnx_dir: models/onnx
+  quantized_dir: models/quantized
+
+benchmark:
+  warmup_runs: 5
+  timed_runs: 30
+  batch_size: 1

@@ -1,0 +1,16 @@
+{
+  "teacher_source": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/teacher",
+  "student_source": "google/bert_uncased_L-2_H-128_A-2",
+  "device": "mps",
+  "metrics": {
+    "eval_loss": 1.3802881240844727,
+    "eval_accuracy": 0.772,
+    "eval_precision": 0.778011942395504,
+    "eval_recall": 0.7645751426938074,
+    "eval_f1": 0.7612742730196006,
+    "eval_runtime": 10.0764,
+    "eval_samples_per_second": 49.621,
+    "eval_steps_per_second": 3.176,
+    "epoch": 1.0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "model": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/student_distilled",
+  "device": "mps",
+  "metrics": {
+    "eval_loss": 1.116651177406311,
+    "eval_model_preparation_time": 0.0005,
+    "eval_accuracy": 0.772,
+    "eval_precision": 0.778011942395504,
+    "eval_recall": 0.7645751426938074,
+    "eval_f1": 0.7612742730196006,
+    "eval_runtime": 1.6439,
+    "eval_samples_per_second": 304.149,
+    "eval_steps_per_second": 19.466
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source_model": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/student_distilled",
+  "onnx_path": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/onnx/model.onnx",
+  "opset": 17,
+  "onnx_size_bytes": 17596158,
+  "onnx_size_mb": 16.781,
+  "onnx_max_abs_diff": 1.1920928955078125e-07,
+  "onnx_mean_abs_diff": 7.078051567077637e-08
+}

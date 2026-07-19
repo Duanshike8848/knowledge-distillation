@@ -1,0 +1,17 @@
+{
+  "model": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/student_distilled",
+  "device": "mps",
+  "parameters": {
+    "total": 4386436,
+    "trainable": 4386436
+  },
+  "model_size_bytes": 18901447,
+  "model_size_mb": 18.0258,
+  "batch_size": 1,
+  "warmup_runs": 5,
+  "timed_runs": 30,
+  "latency_ms_avg": 4.4197,
+  "latency_ms_min": 2.8265,
+  "latency_ms_max": 6.5105,
+  "throughput_samples_per_second": 226.2616
+}

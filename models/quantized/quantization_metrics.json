@@ -1,0 +1,21 @@
+{
+  "fp32_onnx_path": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/onnx/model.onnx",
+  "int8_onnx_path": "/Users/duanshike/Library/Mobile Documents/com~apple~CloudDocs/project/knowledge distillation/models/quantized/model_int8.onnx",
+  "fp32_size_bytes": 17596158,
+  "fp32_size_mb": 16.781,
+  "int8_size_bytes": 4484074,
+  "int8_size_mb": 4.2763,
+  "size_reduction_ratio": 0.7452,
+  "fp32_latency": {
+    "latency_ms_avg": 0.24,
+    "latency_ms_min": 0.2003,
+    "latency_ms_max": 0.5843
+  },
+  "int8_latency": {
+    "latency_ms_avg": 0.283,
+    "latency_ms_min": 0.2112,
+    "latency_ms_max": 0.8577
+  },
+  "max_abs_diff": 0.009579092264175415,
+  "mean_abs_diff": 0.0041429223492741585
+}
